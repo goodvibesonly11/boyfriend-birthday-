@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Rohit ❤️</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', cursive;
+    background: linear-gradient(45deg,#ff9a9e,#fad0c4);
+    text-align: center;
+    overflow-x: hidden;
+}
+
+h1 {
+    color: white;
+    margin-top: 20px;
+    animation: glow 2s infinite alternate;
+}
+@keyframes glow {
+    from { text-shadow: 0 0 10px #fff; }
+    to { text-shadow: 0 0 25px #ff4d6d; }
+}
+
+.container {
+    padding: 20px;
+}
+
+.slider {
+    width: 260px;
+    height: 320px;
+    margin: 20px auto;
+    position: relative;
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    position: absolute;
+    opacity: 0;
+    transition: 1s;
+}
+.slider img.active {
+    opacity: 1;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    text-align: left;
+    line-height: 1.6;
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    background: #ff4d6d;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.hearts::before {
+    content: "💖 💕 💘 💝 💓 💗";
+    position: fixed;
+    width: 100%;
+    animation: float 10s linear infinite;
+}
+@keyframes float {
+    0% { transform: translateY(100vh);}
+    100% { transform: translateY(-10vh);}
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🎉 Happy Birthday Rohit ❤️🎂</h1>
+<p style="color:white;">05 May 2026 💕</p>
+
+<!-- IMAGE SLIDER -->
+<div class="slider">
+    <img src="images/rohit1.jpg" class="active">
+    <img src="images/rohit2.jpg">
+    <img src="images/rohit3.jpg">
+    <img src="images/rohit4.jpg">
+</div>
+
+<!-- LOVE LETTER -->
+<div class="card">
+<p>
+Hey Rohit ❤️ <br><br>
+
+Tumhe ye letter likhte waqt mere face pe ek cute si smile hai 😊  
+Pata hai kyun? Kyunki tum meri life ka sabse special part ho 💕 <br><br>
+
+Tumhari har baat, tumhari smile, tumhara care karna… sab kuch itna pyara lagta hai ki kabhi kabhi bas tumhe dekhte rehne ka mann karta hai 😍 <br><br>
+
+Rohit, tum sirf mere boyfriend nahi ho… tum meri happiness ho, mera sukoon ho, mera safe place ho 💖  
+Jab bhi tum saath hote ho, sab kuch perfect lagta hai 🫶 <br><br>
+
+Mujhe tumhari choti choti baatein bhi yaad rehti hain… aur sach bolun toh tumhari aadat si ho gayi hai mujhe 😌  
+Tum bina life thodi si boring lagti hai 🥺 <br><br>
+
+I promise main hamesha tumhare saath rahungi — tumhari smile ka reason ban ke 😊  
+Aur haan… I love you itnaaaa saaraaa ❤️❤️❤️ <br><br>
+
+Forever yours 💕
+</p>
+</div>
+
+<!-- WHY I LOVE YOU -->
+<div class="card">
+<h3>Why I love you ❤️</h3>
+<p>
+1. Kyunki tum mujhe hamesha special feel karvate ho 🥺💕 <br>
+Tumhari care aur attention mujhe duniya ki sabse lucky girl bana deti hai 😍 <br><br>
+
+2. Kyunki tumhari smile meri happiness hai 😊💖 <br>
+Jab tum haste ho mera din better ho jata hai 🫶 <br><br>
+
+3. Kyunki tum hamesha mere saath khade rehte ho 🤍 <br>
+Har situation me tumhara support mujhe strong banata hai 💫
+</p>
+</div>
+
+<!-- FUTURE BUCKET LIST -->
+<div class="card">
+<h3>Future Bucket List with You ❤️</h3>
+<p>
+1. Tumhare saath long drive pe jaana 🌙🚗 <br>
+Raat ko music sunte hue bas tumhare saath time spend karna 🫶 <br><br>
+
+2. Ek saath travel karna aur naye places explore karna ✈️🌍 <br>
+Har memory tumhare saath create karni hai 💕 <br><br>
+
+3. Tumhare saath ek happy future banana 🏡💖 <br>
+Jahan hum dono hamesha saath ho ❤️✨
+</p>
+</div>
+
+<button onclick="surprise()">Click Surprise 💖</button>
+
+</div>
+
+<div class="hearts"></div>
+
+<script>
+// IMAGE SLIDER
+let imgs = document.querySelectorAll(".slider img");
+let i = 0;
+setInterval(()=>{
+    imgs[i].classList.remove("active");
+    i = (i+1)%imgs.length;
+    imgs[i].classList.add("active");
+},3000);
+
+// SURPRISE
+function surprise(){
+    alert("I LOVE YOU SO MUCH ROHIT ❤️😘");
+}
+</script>
+
+</body>
+</html>
